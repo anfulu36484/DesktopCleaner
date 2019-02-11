@@ -107,7 +107,7 @@ namespace DesktopCleaner
 
         public int GetHashCode(MyFileInfo obj)
         {
-            return obj.GetHashCode();
+            return ((string)obj.FileName).GetHashCode();
         }
     }
 
